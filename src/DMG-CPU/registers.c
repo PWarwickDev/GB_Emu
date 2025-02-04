@@ -25,17 +25,17 @@ struct registers
 struct flags 
 {
     // Zero flag (1 if current op results in zero)
-    unsigned char Z;
+    unsigned char z;
 
     // Subtraction flag (1 if subtraction performed)
-    unsigned char N;
+    unsigned char n;
 
     // Half carry flag (1 if carry occurred from lower nibble of last op)
     // * lower nibble means lowest 4 bits * 
-    unsigned char H;
+    unsigned char h;
 
     // Carry flag (1 if carry occurred in last op, or if A is smaller val in CP instr)
-    unsigned char C;
+    unsigned char c;
 
     bool HALT;
 };

@@ -20,6 +20,9 @@ past.
 It is prudent to do a sort of test-driven development for this type of system, as it has
 so many working parts within it, and many are cycle-critical. 
 
+Step 0: ROM Disassembly. This requires implementation of the opcodes, as well as the ability to
+then interpret the info within a ROM.
+
 Step 1: Emulation of the CPU. I would like to get the CPU as close to perfect as I can,
 so as to not have to come back to it later on. This requires creation and testing of the opcodes
 used within the GameBoy system (there are many). 
@@ -94,3 +97,19 @@ https://www.reddit.com/r/EmuDev/
 
 GBDev Pan Docs
 https://gbdev.io/pandocs/About.html
+
+Bootstrap ROM for GB
+https://gbdev.gg8.se/wiki/articles/Gameboy_Bootstrap_ROM
+
+gbops opcode table for GB
+https://izik1.github.io/gbops/index.html
+
+Roberto Vaccari's Journey into GB emulation
+https://robertovaccari.com/blog/2020_09_26_gameboy/
+
+**Tools**
+
+- VSCode for an IDE
+
+-ImHex for inspecting binary data in a hex editor
+https://github.com/WerWolv/ImHex?tab=readme-ov-file
